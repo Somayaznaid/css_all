@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .con {
+          display: grid;
+          grid-template-columns:  1fr 1fr 1fr 1fr;
+          gap: 5px 5px;
+          height: 720px;
+          width: 1100px;
+          padding: 10px;
+        }
+        .box1 {
+        background-color: rgb(211, 209, 209);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 5px;
+        padding: 10px;
+        }
+
+        .box_row {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 5px;
+            background-color: rgb(211, 209, 209);
+            padding: 10px;
+        }
+
+        .box_col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5px;
+            background-color: rgb(211, 209, 209);
+            padding: 10px;
+        }
+
+        .sub_box {
+          background-color: gray;
+          
+        }
+     </style>
+</head>
+<body>
+    <div class="con"> 
+     <div class="box1">item1</div>
+     <div class="box1">
+        <div class="sub_box">Sub 1</div>
+        <div class="sub_box">Sub 2</div>
+        <div class="sub_box">Sub 3</div>
+        <div class="sub_box">Sub 4</div>
+    </div>
+    <div class="box1">
+        <div class="sub_box">Sub 1</div>
+        <div class="sub_box">Sub 2</div>
+        <div class="sub_box">Sub 3</div>
+        <div class="sub_box">Sub 4</div>
+    </div>
+     <div class="box1">item4</div>
+     <div class="box1">item5</div>
+
+     <div class="box_row">
+        <div class="sub_box">Sub 1</div>
+        <div class="sub_box">Sub 2</div>
+        
+    </div>
+
+    <div class="box_col">
+        <div class="sub_box">Sub 1</div>
+        <div class="sub_box">Sub 2</div>
+        
+    </div>
+     <div class="box1">item8</div>
+     <div class="box1">
+        <div class="sub_box">Sub 1</div>
+        <div class="sub_box">Sub 2</div>
+        <div class="sub_box">Sub 3</div>
+        <div class="sub_box">Sub 4</div>
+    </div>
+     <div class="box1">item10</div>
+     <div class="box1">item11</div>
+     <div class="box1">
+        <div class="sub_box">Sub 1</div>
+        <div class="sub_box">Sub 2</div>
+        <div class="sub_box">Sub 3</div>
+        <div class="sub_box">Sub 4</div>
+    </div>
+    </div>
+</body>
+</html>

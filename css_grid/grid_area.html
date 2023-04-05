@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  height: 525px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+    .item1 { 
+        grid-area: 1 / 1 / span 1 / span 60;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+    }
+    .item2 { 
+        grid-area: 2 / 1 / span 1 / span 30 ;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+    }
+    .item3 { 
+        grid-area: 2 / 31 / span 1 / span 30 ;
+        background-color: rgb(70,178,253);
+        border-radius: 10px;
+    }
+    .item4 { 
+        grid-area: 3 / 1 / span 1 / span 20;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }
+        .item5 { 
+        grid-area: 3 / 21 / span 1 / span 20;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }
+        .item6 { 
+        grid-area: 3 / 41 / span 1 / span 20;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        } 
+        .item7 { 
+        grid-area: 4 / 1 / span 1 / span 15;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }
+        .item8 { 
+        grid-area: 4 / 16 / span 1 / span 15;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        } 
+        .item9 { 
+        grid-area: 4 / 31 / span 1 / span 15;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }
+        .item10 { 
+        grid-area: 4 / 46 / span 1 / span 15;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        } 
+        .item11 { 
+        grid-area: 5 / 1 / span 1 / span 12;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        } 
+        .item12 { 
+        grid-area: 5 / 13 / span 1 / span 12;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        } 
+        .item13 { 
+        grid-area: 5 / 25 / span 1 / span 12;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        } 
+        .item14 { 
+        grid-area: 5 / 37 / span 1 / span 12;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        } 
+        .item15 { 
+        grid-area: 5 / 49 / span 1 / span 12;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }
+        .item16 { 
+        grid-area: 6 / 1 / span 1 / span 10;
+        background-color: rgb(70,178,253);
+        border-radius: 10px;
+        }
+        .item17 { 
+        grid-area: 6 / 11 / span 1 / span 10;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }  
+        .item18 { 
+        grid-area: 6 / 21 / span 1 / span 10;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }  
+        .item19 { 
+        grid-area: 6 / 31 / span 1 / span 10;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }  
+        .item20 { 
+        grid-area: 6 / 41 / span 1 / span 10;
+        background-color: rgb(70,178,253);
+        border-radius: 10px;
+        }  
+        .item21 { 
+        grid-area: 6 / 51 / span 1 / span 10;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }  
+        .item22 { 
+        grid-area: 7 / 1 / span 1 / span 60;
+        background-color: rgb(70,178,253); 
+        border-radius: 10px;
+        }                                                                                                  
+</style>
+<body>
+    <div class="grid-container">
+        <div class="item1">60 GC is starter kit for the CSS Grid.</div>
+        <div class="item2">1</div>
+        <div class="item3">2</div>  
+        <div class="item4">1</div>
+        <div class="item5">2</div>
+        <div class="item6">3</div>
+        <div class="item7">1</div>  
+        <div class="item8">2</div>
+        <div class="item9">3</div>
+        <div class="item10">4</div>
+        <div class="item11">1</div>  
+        <div class="item12">2</div>
+        <div class="item13">3</div>
+        <div class="item14">4</div>
+        <div class="item15">5</div>  
+        <div class="item16">1</div>
+        <div class="item17">2</div>
+        <div class="item18">3</div>
+        <div class="item19">4</div>  
+        <div class="item20">5</div>
+        <div class="item21">6</div>  
+        <div class="item22">
+            <p>Why 60 ?</p>
+            <p>Because yhe number 60 is dividable by 2,3,4,5 and 6.</p>
+        </div>
+                
+    </div>
+</body>
+</html>

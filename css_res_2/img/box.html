@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .con {
+            width: 100%;
+            height: 750px;
+        }
+        .top {
+            width: 100%;
+            height: 240px;
+            background-color: #eeeeee;
+        }
+        .buttom {
+            width: 100%;
+            height: 510;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .buttom_1 {
+            width: 70%;
+            height: 510px;
+            
+        }
+
+        .buttom_2 {
+            width: 30%;
+            height: 510px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 100px;
+            width: 15%;
+            margin: 10px;
+        }
+
+        .box_buttom {
+            background-color: #343a40;
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+        }
+        .img{
+            width: 700px;
+        }
+
+        
+        @media screen and (max-width: 820px) {
+            .top {
+            width: auto;
+            height: 480px;
+            background-color: #eeeeee;
+        }
+        .top-up{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .top-down{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .buttom {
+            width: 100%;
+            height: 510;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 105%;
+        }
+        .box{
+            width: 100%;
+        }
+        .img{
+            width: 500px;
+        }
+        
+        .buttom_2 {
+            width: 30%;
+            height: 510px;
+            display: flex;
+            
+
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="top">
+            <div class="top-up" style="display: flex; flex-wrap: wrap;"> 
+            <div class="box" style="background-color: #27a9e3;"></div>
+            <div class="box" style="background-color: #28b779;width: auto;"></div>
+            <div class="box" style="background-color: #ffb848;"></div>
+            <div class="box" style="background-color: #da542e;"></div>
+            <div class="box" style="background-color: #2255a4;"></div>
+            </div>
+
+            <div class="top-down" style="display: flex; flex-wrap: wrap;"> 
+                <div class="box" style="background-color: #da542e;width: 30%;"></div>
+                <div class="box" style="background-color: #2255a4;"></div>
+                <div class="box" style="background-color: #27a9e3"></div>
+                <div class="box" style="background-color: #28b779;"></div>
+                <div class="box" style="background-color: #ffb848;"></div>
+                </div>
+        </div>
+        <div class="buttom">
+            <div class="buttom_1"> 
+                <div style="font-weight: 700; font-size: larger;"> Site Analysis</div>
+                <div> Overview of Latest Month</div>
+                <div> <img  src="per.png" alt=""></div>
+            </div>
+            <div class="buttom_2"> 
+                <div class="box_buttom"> </div>
+                <div class="box_buttom"> </div>
+                <div class="box_buttom"> </div>
+                <div class="box_buttom"> </div>
+                <div class="box_buttom"> </div>
+                <div class="box_buttom"> </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

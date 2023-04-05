@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .con {
+            width: 100%;
+            height: 750px;
+            
+        }
+        .header_1 {
+            display: flex;
+            flex-wrap: wrap;
+           justify-content: space-between;
+           background-color: #ffffff;
+           width: 100%;
+            height: 80px;
+        }
+
+        .header_1_1 ,
+        .header_1_2
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .header_text {
+          margin: 10px;
+        }
+
+        .header_2 {
+            justify-content: center;
+            /* vertical-align: center; */
+            background-color: #e8f0f2;
+            display: flex;
+            flex-wrap: wrap;
+            width: 99%;
+            height: 60px;
+        }
+
+        .header_text_2 {
+            width: 10%;
+            height: 40px;
+            margin: 1%;
+            margin-bottom: 4%;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .main {
+            width: 100%;
+            height: 610;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1%;
+        }
+        .body_1 {
+            width: 50%;
+            height: 610;
+            
+        }
+        .body_2 {
+            width: 50%;
+            height: 610;
+            
+        }
+        .add {
+            margin: 3%;
+
+        }
+
+        .btn {
+            background-color: #fe7300;
+            color: #ffffff;
+            border: none;
+            padding: 3%;
+        }
+
+        @media screen and (max-width: 391px) {
+            .header_2 {
+                height: 90px;
+
+            }
+            .main {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .body_1 , .body_2 {
+                width: 100%;
+            }
+
+            .header_text_2 {
+            width: 20%;
+            height: 40px;
+        }
+
+        .header_1 {
+           width: 100%;
+            height: 150px;
+        }
+
+        .header_text {
+            margin: 2%;
+        }
+
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="header_1">
+            <div class="header_1_1">
+                <div> <img src="Screenshot_2023-03-19_211050-removebg-preview.png" alt=""></div>
+            <div> KARMA</div>
+            </div>
+            <div class="header_1_2">
+                <div class="header_text">Home</div>
+                <div class="header_text" style="color: #fe7300;">SHOP</div>
+                <div class="header_text">BLOG</div>
+                <div class="header_text">PAGES</div>
+                <div class="header_text">CONTACT</div>
+                <div class="header_text"><svg  width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg></div>
+                <div class="header_text"><svg width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></div>
+            </div>
+        </div>
+        <div class="header_2">
+            <div class="header_text_2">Description</div>
+            <div class="header_text_2">Specificatio</div>
+            <div class="header_text_2">Comments</div>
+            <div class="header_text_2" style="background-color: #fe7300;color: #e8f0f2;">Reviews</div>
+        </div>
+        <div class="main">
+            <div class="body_1">
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div style=" margin: 2%; background-color: #e8f0f2; width: 30%;justify-content: center;"> 
+                        <div> Overall</div>
+                        <div style="font-size: xx-large; color: #fe7300;font-weight: 700;"> 4.0</div>
+                        <div style="color: gray;"> (03 Reviews)</div>
+                    </div>
+                    <div style="margin: 2%; width: 30%;"> 
+                        <div>Based on 3 Reviews</div>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="font-size: x-small;"> 5 Star</div>
+                            <div> <img width="90px" src="star.png" alt=""></div>
+                            <div style="font-size: x-small;"> 01</div>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="font-size: x-small;"> 5 Star</div>
+                            <div> <img width="90px" src="star.png" alt=""></div>
+                            <div style="font-size: x-small;"> 01</div>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="font-size: x-small;"> 5 Star</div>
+                            <div> <img width="90px" src="star.png" alt=""></div>
+                            <div style="font-size: x-small;"> 01</div>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="font-size: x-small;"> 5 Star</div>
+                            <div> <img width="90px" src="star.png" alt=""></div>
+                            <div style="font-size: x-small;"> 01</div>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="font-size: x-small;"> 5 Star</div>
+                            <div> <img width="90px" src="star.png" alt=""></div>
+                            <div style="font-size: x-small;"> 01</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div> 
+                <div>
+                    <div style="display: flex;"> 
+                         <div> <img src="pro_pic.png" alt=""> </div>
+                         <div> 
+                            <div> Blake Ruiz</div>
+                            <div> <img src="star.png" alt=""></div>
+                         </div>
+                    </div>
+                    <div> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, necessitatibus itaque veniam aperiam et saepe eius unde pariatur repellendus autem perspiciatis? Itaque qui repellendus animi saepe excepturi perspiciatis, quod delectus.
+                    </div>
+                </div>
+
+                <div>
+                    <div style="display: flex;"> 
+                         <div> <img src="pro_pic.png" alt=""> </div>
+                         <div> 
+                            <div> Blake Ruiz</div>
+                            <div> <img src="star.png" alt=""></div>
+                         </div>
+                    </div>
+                    <div> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, necessitatibus itaque veniam aperiam et saepe eius unde pariatur repellendus autem perspiciatis? Itaque qui repellendus animi saepe excepturi perspiciatis, quod delectus.
+                    </div>
+                </div>
+
+                <div>
+                    <div style="display: flex;"> 
+                         <div> <img src="pro_pic.png" alt=""> </div>
+                         <div> 
+                            <div> Blake Ruiz</div>
+                            <div> <img src="star.png" alt=""></div>
+                         </div>
+                    </div>
+                    <div> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, necessitatibus itaque veniam aperiam et saepe eius unde pariatur repellendus autem perspiciatis? Itaque qui repellendus animi saepe excepturi perspiciatis, quod delectus.
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="body_2">
+                <div> 
+                <div style="font-size: x-large;">Add a Review</div>
+                <div class="add"> your Rating <span> <img src="star.png" alt=""></span> Outstanding</div>
+                <div class="add">your Full name</div>
+                <div class="add">Email Address</div>
+                <div class="add">Phone Numbers</div>
+                <div class="add">Review</div>
+            </div>
+            <div style="margin-left: 10%;"> 
+                <input type="button" value="SUBMIT KNOW" class="btn">
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

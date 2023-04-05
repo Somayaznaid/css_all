@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #a8bf7e;
+            font-family: sans-serif;
+        }
+        .con {
+            background-color: #a0d0ea;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 7px 7px;
+            width: 420px;
+            height: 500px;
+            padding: 10px;
+            border-radius: 2%;
+            margin: 90px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .screen{
+           grid-column: 1/5;
+           height: 60px;
+           width: 390px;
+           background-color: #f1fbeb;
+           margin-left: 1%;
+           box-shadow: 0px 5px #80a5ba;
+           
+        }
+        .box {
+            height: 50px;
+            width: 60px;
+            background-color: #efefef;
+            margin-left: 7%;
+            margin-bottom: 5%;
+            text-align: center;
+            vertical-align: center;
+            justify-content: center;
+            box-shadow: 0px 5px #80a5ba;
+            padding: 15px;
+            font-size: 30px;
+            color: #687e96;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="screen"> </div>
+        <div class="box1 box">1</div>
+        <div class="box2 box">2</div>
+        <div class="box3 box">3</div>
+        <div class="box_add box" style="background-color: #efff93;">+</div>
+        <div class="box4 box">4</div>
+        <div class="box5 box">5</div>
+        <div class="box6 box">6</div>
+        <div class="box_sup box" style="background-color: #efff93;">-</div>
+        <div class="box7 box">7</div>
+        <div class="box8 box">8</div>
+        <div class="box9 box">9</div>
+        <div class="box_star box" style="background-color: #efff93;">*</div>
+        <div class="box_c box" style="background-color: #fd9fa9;">C</div>
+        <div class="box0 box">0</div>
+        <div class="box_equal box">=</div>
+        <div class="box_div box" style="background-color: #efff93;">/</div>
+    </div>
+
+
+    <script>
+        let screen = document.querySelector(".screen");
+        let box0 = document.querySelector(".box0");
+        let box1 = document.querySelector(".box1");
+        let box2 = document.querySelector(".box2");
+        let box3 = document.querySelector(".box3");
+        let box4 = document.querySelector(".box4");
+        let box5 = document.querySelector(".box5");
+        let box6 = document.querySelector(".box6");
+        let box7 = document.querySelector(".box7");
+        let box8 = document.querySelector(".box8");
+        let box9 = document.querySelector(".box9");
+        let cal = true;
+        let num =0;
+         box1.addEventListener("click" , function(){
+            if(cal == true) {
+            screen.innerHTML= 1; 
+            screen.style.fontSize= "50px";
+            
+            }
+
+         });
+
+        //  box2.addEventListener("click" , function(){
+        //     if(cal == true) {
+        //     screen.innerHTML=num+1 ; 
+        //     screen.style.fontSize= "50px";
+        //     num++;
+        //     }
+
+        //  });
+
+        box2.addEventListener("click" , function(){
+            if(cal == true) {
+            screen.innerHTML=2 ; 
+            screen.style.fontSize= "50px";
+            
+            }
+
+         });
+
+
+
+
+    </script>
+        
+</body>
+</html>
